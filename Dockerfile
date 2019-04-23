@@ -1,7 +1,7 @@
 FROM debian:9-slim
 
 RUN apt-get update && \
-  apt-get install -y build-essential libssl-dev \
+  apt-get install -y build-essential libssl1.0-dev \
   libpq-dev nodejs curl gnupg2 procps git liblzma-dev zlib1g-dev libyaml-dev patch \
   libxml2-dev libxslt-dev curl
 
