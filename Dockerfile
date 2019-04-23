@@ -10,3 +10,4 @@ RUN curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 RUN bash -l -c 'rvm install ruby-1.9.3-p551 && rvm --default use ruby-1.9.3-p551 && gem install bundler -v 1.17.3 && gem install nokogiri -v 1.5.10'
 
+CMD ["/bin/sh"]
